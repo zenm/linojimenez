@@ -6,6 +6,22 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alfa Slab One Regular'), local('AlfaSlabOne-Regular'), url(https://fonts.gstatic.com/s/alfaslabone/v6/Qx6FPcitRwTC_k88tLPc-QYWpCd0FFfjqwFBDnEN0bM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v9/Q_Z9mv4hySLTMoMjnk_rCXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+
+}
 * {
   border: 1px dotted pink;
 }
@@ -14,14 +30,13 @@ html {
   font-size: 16px;
   font-family: 'Fira Mono', monospace;
 }
+
 .container {
-  height: 130rem;
+  /*height: 130rem;*/
 }
 
 nav {
   height: 2rem;
-  z-index: 10;
-  position: fixed;
   width: 100%;
 }
 
@@ -30,40 +45,51 @@ ul {
   justify-content: center;
   margin: .25rem 0;
 }
+
 nav li {
   text-decoration: none;
   margin: 0 1rem;
 }
 
-.hero.area {
-  /*background-image: url('../images/wrigley-img.jpg');*/
-  background-color: #46454D;
-  color: #fcfcfc;
-  /*background-size: cover;*/
-  height: 30rem;
-  position: fixed;
-  top: 0;
-  left:0;
-  right:0;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.name {
-  font-size: 4rem;
-  text-align: center;
+.role {
+  font-size: .75rem;
 }
 
+.hero.area {
+  /*background-image: url('../images/coffee-mug.jpg');*/
+  /*background-size: cover;*/
+  background-color: #46454D;
+  color: #fcfcfc;
+  height: 39rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.introduction {
+  font-family: 'Pacifico', cursive;
+  margin: 0 0 5rem 0;
+  font-size: 3rem;
+}
+
+.initials {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 6rem;
+  text-align: center;
+  margin: 0 0 5rem 0;
+}
+
+
 .content-areas {
-  z-index: 5;
+  /*z-index: 5;*/
   background-color: #fff;
-  position: relative;
-  top: 52rem;
+  /*position: relative;*/
+  /*top: 28rem;*/
+  margin: 0 .5rem;
 }
 
 .about {
-  height: 40rem;
+  height: 39rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -73,13 +99,28 @@ nav li {
 footer {
   display: flex;
   justify-content: center;
+  flex-flow: column nowrap;
   align-items: flex-end;
   color: #fcfcfc;
-  background-image: url('../images/ferris-wheel.jpg');
-  background-position: center;
-  background-size: cover;
+  /*background-image: url('../images/ferris-wheel.jpg');*/
+  /*background-position: center;
+  background-size: cover;*/
+  background-color: #2C272D;
   height: 10rem;
-  position: fixed;
+  width: 100%;
+  /*position: fixed;*/
   bottom: 0;
-  z-index: -1;
+  /*z-index: -1;*/
+}
+
+footer span {
+  margin-right: 3rem;
+}
+
+/*.photo-credit {
+
+}*/
+
+.copy-credit {
+  font-size: 2rem;
 }
