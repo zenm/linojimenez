@@ -20,15 +20,19 @@
   font-weight: 400;
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v9/Q_Z9mv4hySLTMoMjnk_rCXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-
 }
+
 * {
   border: 1px dotted pink;
 }
 
 html {
   font-size: 16px;
+}
+
+body {
   font-family: 'Fira Mono', monospace;
+  line-height: 1.125;
 }
 
 .container {
@@ -36,55 +40,73 @@ html {
 }
 
 nav {
-  height: 2rem;
   width: 100%;
-}
-
-ul {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  margin: .25rem 0;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-nav li {
+nav a {
   text-decoration: none;
-  margin: 0 1rem;
+  width:80%;
+  text-align: center;
+  padding: .5rem 0;
+  margin: .25rem 0;
+  border: 2px solid #fcfcfc;
+  color: #fcfcfc;
 }
+
+nav a:hover {
+  color: #46454D;
+  background-color: #fcfcfc;
+  border: 2px solid #46454D;
+}
+
+nav a:active {
+  background-color: #525A88;
+  color: #fcfcfc;
+  border: 2px solid #fcfcfc;
+}
+
 
 .role {
   font-size: .75rem;
 }
 
 .hero.area {
-  /*background-image: url('../images/coffee-mug.jpg');*/
-  /*background-size: cover;*/
   background-color: #46454D;
   color: #fcfcfc;
-  height: 39rem;
+  height: 60rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .introduction {
-  font-family: 'Pacifico', cursive;
-  margin: 0 0 5rem 0;
+  margin: 20rem 0 0 0;
   font-size: 3rem;
-}
-
-.initials {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 6rem;
   text-align: center;
-  margin: 0 0 5rem 0;
 }
 
+.name {
+  font-size: 3.5rem;
+  font-family: 'Alfa Slab One';
+}
+
+.position {
+  font-size: 2rem;
+  font-family: 'Alfa Slab One';
+  margin: 1rem 0 0 0;
+}
+
+.hello {
+  font-family: 'Pacifico', cursive;
+  margin: 7rem 0 0 0;
+}
 
 .content-areas {
-  /*z-index: 5;*/
   background-color: #fff;
-  /*position: relative;*/
-  /*top: 28rem;*/
   margin: 0 .5rem;
 }
 
@@ -94,6 +116,28 @@ nav li {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+
+/* project area */
+
+.project {
+  height: 10rem;
+  width: 10rem;
+  background-image: url('../images/coffee-mug.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* social media section*/
+.social-media {
+  margin: 1rem ;
+  text-align: center;
+}
+
+.social-media a {
+  font-size: 3rem;
+  margin: 3rem 0 1rem 0;
 }
 
 footer {
@@ -123,4 +167,43 @@ footer span {
 
 .copy-credit {
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 480px) {
+  nav {
+    position: static;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: .25rem auto;
+    max-width: 50rem;
+  }
+
+  nav a {
+    margin: 0 1rem;
+    color: #46454D;
+    border: 2px solid #46454D;
+  }
+
+  nav a:hover {
+    color: #fcfcfc;
+    background-color: #46454D;
+    border: 2px solid #46454D;
+  }
+
+  nav a:active {
+    background-color: #525A88;
+    color: #fcfcfc;
+    border: 2px solid #fcfcfc;
+  }
+  .name {
+    font-size: 5rem;
+  }
+
+  .hello {
+    font-family: 'Pacifico', cursive;
+    margin: 25rem 0 0 0;
+  }
+
+
 }
