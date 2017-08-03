@@ -22,9 +22,9 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-* {
+/** {
   border: 1px dotted pink;
-}
+}*/
 
 html {
   font-size: 16px;
@@ -69,7 +69,6 @@ nav a:active {
   border: 2px solid #fcfcfc;
 }
 
-
 .role {
   font-size: .75rem;
 }
@@ -77,7 +76,7 @@ nav a:active {
 .hero.area {
   background-color: #46454D;
   color: #fcfcfc;
-  height: 60rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -90,19 +89,19 @@ nav a:active {
 }
 
 .name {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Alfa Slab One';
 }
 
 .position {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Alfa Slab One';
   margin: 1rem 0 0 0;
 }
 
 .hello {
   font-family: 'Pacifico', cursive;
-  margin: 7rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .content-areas {
@@ -196,13 +195,14 @@ footer span {
     color: #fcfcfc;
     border: 2px solid #fcfcfc;
   }
+
   .name {
     font-size: 5rem;
   }
 
   .hello {
     font-family: 'Pacifico', cursive;
-    margin: 25rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
 
 
