@@ -22,9 +22,9 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-* {
+/** {
   border: 1px dotted pink;
-}
+}*/
 
 html {
   font-size: 16px;
@@ -69,9 +69,7 @@ nav a:active {
   border: 2px solid #fcfcfc;
 }
 
-.role {
-  font-size: .75rem;
-}
+/*hero area*/
 
 .hero.area {
   background-color: #46454D;
@@ -101,7 +99,7 @@ nav a:active {
 .hello {
   font-family: 'Pacifico', cursive;
   position: absolute;
-  bottom: 0rem;
+  bottom: 1rem;
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -111,28 +109,70 @@ nav a:active {
   font-size: 1.5rem;
 }
 
-.content-areas {
-  background-color: #fff;
-  margin: 0 .5rem;
+/* up arrow */
+
+
+.scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #86AF49;
+  background-color: #f3f7ed;
+  border-radius: 50%;
+  opacity: 33%;
+  display: none;
 }
 
-.about {
-  height: 39rem;
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.content-areas {
+  background-color: #fff;
+  margin: 0 1rem;
+}
+
+.about.area {
+  height: 50rem;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  margin: .5rem 0 0 0;
+}
+
+.about h3 {
+  font-size: 1.25rem;
+  margin: .25rem 0 0 0;
 }
 
 /* project area */
 .projects.area {
+  background-color: #D6D5DA;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
+
+.projects.area h2 {
+  font-size: 1.5rem;
+  margin: .5rem 0 0 0;
+}
+
 .show-more-project {
 
 }
+
 .all-projects {
   width: 25rem;
   display: flex;
@@ -149,16 +189,45 @@ nav a:active {
   background-position: center;
 }
 
+.project:hover {
+  background-color: #ededed;
+  opacity: .25;
+}
 
-/* social media section*/
+.project-text {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.project-text:hover {
+  opacity: 1;
+  color: #000;
+}
+
+
+
+/* contact area */
+.contact.area h2{
+  font-size: 1.5rem;
+  margin: .5rem 0 0 0;
+}
+
+/* social media section */
 .social-media {
   margin: 1rem ;
   text-align: center;
 }
 
 .social-media a {
-  font-size: 3rem;
-  margin: 3rem 0 1rem 0;
+  display: inline-block;
+  font-size: 4rem;
+  margin: 2rem 0 1rem 0;
+  color: #525A88;
+}
+
+.social-media a:visited {
+  color:#895289;
 }
 
 footer {
@@ -167,24 +236,15 @@ footer {
   flex-flow: column nowrap;
   align-items: flex-end;
   color: #fcfcfc;
-  /*background-image: url('../images/ferris-wheel.jpg');*/
-  /*background-position: center;
-  background-size: cover;*/
   background-color: #2C272D;
   height: 10rem;
   width: 100%;
-  /*position: fixed;*/
   bottom: 0;
-  /*z-index: -1;*/
 }
 
 footer span {
   margin-right: 3rem;
 }
-
-/*.photo-credit {
-
-}*/
 
 .copy-credit {
   font-size: 2rem;

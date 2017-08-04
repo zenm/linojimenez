@@ -11,10 +11,10 @@
 <body>
   <div class="container">
     <nav>
-      <a href="#"><span>Home</span></a>
-      <a href="#"><span>About</span></a>
-      <a href="#"><span>Work</span></a>
-      <a href="#"><span>Contact</span></a>
+      <a href="#home"><span>Home</span></a>
+      <a href="#about"><span>About</span></a>
+      <a href="#work"><span>Work</span></a>
+      <a href="#contact"><span>Contact</span></a>
     </nav>
     <div class="hero area">
       <div id="home" class="introduction">
@@ -28,12 +28,15 @@
         <i class="fa fa-arrow-down" aria-hidden="true"></i>
       </div>
     </div>
+    <!-- arrow to scroll up -->
+    <div id="up-arrow" class="scroll-top hide">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
     <!-- content areas -->
-    <div class="content-areas">
-      <div class="about area">
+      <div id="about" class="about area">
         <div class="about-persona">
           <h2>You</h2>
-          <h3 class="">Who are you?</h3>
+          <h3>Who are you?</h3>
           <p>Amet massa vitae tortor condimentum lacinia quis vel. Condimentum id venenatis a condimentum vitae sapien pellentesque. Sagittis aliquam malesuada bibendum arcu.</p>
           <h3 class="">What are you looking for?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla at volutpat diam ut venenatis tellus.</p>
@@ -47,9 +50,8 @@
         </div>
       </div>
       <div class="projects area">
-        <h2>work work work work work</h2>
+        <h2 id="work">Work</h2>
         <div class="show-more-project">
-
         </div>
         <div class="all-projects">
           <div class="project">
@@ -122,11 +124,11 @@
               <span>asdfasdfasdfempor incididunt ut labore et dolore magna aliqua. Nulla at volutpat diam ut venenatis tellus</span>
             </div>
           </div>
-        </div>
+
       </div>
-      <div class="contact area">
+      <div id="contact"class="contact area">
         <div class="social-media">
-          <p>Get in Contact with me:</p>
+          <h2>Contact me</h2>
           <a href="https://www.linkedin.com/in/lino-jimenez-jr-4989b23/" target="_blank"><i class="linkedin fa fa-linkedin" aria-hidden="true"></i></a>
           <a href="https://github.com/zenm" target="_blank"><i class="github fa fa-github-alt" aria-hidden="true"></i></a>
           <a href="https://www.freecodecamp.com/linolearnstocode" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
@@ -140,5 +142,6 @@
     <script type="text/javascript" src="#">
     </script>
   </div>
+  <script type="text/javascript" src="./resources/main.js"></script>
 </body>
 </html>
