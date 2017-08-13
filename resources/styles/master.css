@@ -181,31 +181,23 @@ nav a:active {
 }
 
 .project {
+  background: url('../images/coffee-mug.jpg');
   margin: 1rem;
   height: 10rem;
   width: 10rem;
-  background-image: url('../images/coffee-mug.jpg');
+  color: #000;
+  /*width: 100%;*/
   background-size: cover;
   background-position: center;
+  
 }
 
-.project:hover {
-  background-color: #ededed;
-  opacity: .25;
+.filter {
+ background: linear-gradient(
+   rgba(123,200,200,.5),
+   rgba(29,255,255,.5)
+ );
 }
-
-.project-text {
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.project-text:hover {
-  opacity: 1;
-  color: #000;
-}
-
-
 
 /* contact area */
 .contact.area h2{
