@@ -1,8 +1,16 @@
 @font-face {
-  font-family: 'Fira Mono';
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v7/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Fira Mono Bold'), local('FiraMono-Bold'), url(https://fonts.gstatic.com/s/firamono/v5/l24Wph3FsyKAbJ8dfExTZ-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v7/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
@@ -22,274 +30,126 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-/** {
+* {
   border: 1px dotted pink;
-}*/
+}
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Fira Sans', sans-serif;
   line-height: 1.125;
 }
 
-.container {
-  /*height: 130rem;*/
+h2 {
+  color: #fefefe;
+  font-size: 2rem;
 }
 
-nav {
-  width: 100%;
-  position: absolute;
+.banner {
   display: flex;
-  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
 }
 
-nav a {
-  text-decoration: none;
-  width:80%;
-  text-align: center;
-  padding: .5rem 0;
-  margin: .25rem 0;
-  border: 2px solid #fcfcfc;
-  color: #fcfcfc;
-}
-
-nav a:hover {
-  color: #46454D;
-  background-color: #fcfcfc;
-  border: 2px solid #46454D;
-}
-
-nav a:active {
-  background-color: #525A88;
-  color: #fcfcfc;
-  border: 2px solid #fcfcfc;
-}
-
-/*hero area*/
-
-.hero.area {
-  background-color: #46454D;
-  color: #fcfcfc;
+.hero {
+  background: linear-gradient(
+    rgba(20,20,20, 0.50),
+    rgba(20,20,20, 0.50)),
+    url('../images/hustle.jpg');
+  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
+  /*background-color: blue;*/
+  background-attachment: fixed;
 }
 
-.introduction {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.name {
-  font-size: 3rem;
-  font-family: 'Alfa Slab One';
-}
-
-.position {
-  font-size: 1.5rem;
-  font-family: 'Alfa Slab One';
-  margin: 1rem 0 0 0;
-}
-
-.hello {
-  font-family: 'Pacifico', cursive;
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.hello .fa-arrow-down {
-  font-size: 1.5rem;
-}
-
-/* up arrow */
 
 
-.scroll-top {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  color: #86AF49;
-  background-color: #f3f7ed;
-  border-radius: 50%;
-  opacity: 33%;
-  display: none;
-}
-
-.show {
-  display: inline-block;
-}
-
-.hide {
-  display: none;
-}
-
-.content-areas {
-  background-color: #fff;
-  margin: 0 1rem;
-}
-
-.about.area {
-  height: 50rem;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-.about h2 {
-  font-size: 1.5rem;
-  margin: .5rem 0 0 0;
+.about {
+  font-size: 2rem
+  height: 100%;
+  margin: 2rem 1rem;
 }
 
 .about h3 {
-  font-size: 1.25rem;
-  margin: .25rem 0 0 0;
-}
-
-/* project area */
-.projects.area {
-  background-color: #D6D5DA;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.projects.area h2 {
-  font-size: 1.5rem;
-  margin: .5rem 0 0 0;
-}
-
-.show-more-project {
-
-}
-
-.all-projects {
-  width: 25rem;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.project {
-  background: url('../images/coffee-mug.jpg');
-  margin: 1rem;
-  height: 10rem;
-  width: 10rem;
-  color: #000;
-  /*width: 100%;*/
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.filter {
- background: linear-gradient(
-   rgba(123,200,200,.5),
-   rgba(29,255,255,.5)
- );
-}
-
-/* contact area */
-.contact.area h2{
-  font-size: 1.5rem;
-  margin: .5rem 0 0 0;
-}
-
-/* social media section */
-.social-media {
-  margin: 1rem ;
-  text-align: center;
-}
-
-.social-media a {
-  display: inline-block;
-  font-size: 4rem;
-  margin: 2rem 0 1rem 0;
-  color: #525A88;
-}
-
-.social-media a:visited {
-  color:#895289;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  align-items: flex-end;
-  color: #fcfcfc;
-  background-color: #2C272D;
-  height: 10rem;
-  width: 100%;
-  bottom: 0;
-}
-
-footer span {
-  margin-right: 3rem;
-}
-
-.copy-credit {
+  margin: 1rem 0;
+  font-weight: 500;
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 480px) {
-  nav {
-    position: static;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: .25rem auto;
-    max-width: 50rem;
-  }
 
-  nav a {
-    margin: 0 1rem;
-    color: #46454D;
-    border: 2px solid #46454D;
-  }
+.work.banner {
+  background: linear-gradient(
+    rgba(20,20,20, 0.50),
+    rgba(20,20,20, 0.50)),
+    url('../images/computer-code.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  color: #fff;
+  background-attachment: fixed;
+}
 
-  nav a:hover {
-    color: #fcfcfc;
-    background-color: #46454D;
-    border: 2px solid #46454D;
-  }
+.project img {
+  width: 100%;
+  heigh: auto;
+}
 
-  nav a:active {
-    background-color: #525A88;
-    color: #fcfcfc;
-    border: 2px solid #fcfcfc;
-  }
 
-.name-position {
+.img-text {
+  position: relative;
+  width: 100%;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.img-text:hover .project-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.contact.banner {
+  background: linear-gradient(
+    rgba(20,20,20, 0.50),
+    rgba(20,20,20, 0.50)),
+    url('../images/chicago-skyline.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+footer {
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+footer img {
 
 }
-  .name {
-    width: 40rem;
-  }
 
-  .position {
-    width: 20r  em;
-  }
-
-  .hello {
-
-  }
-
-  .name img,
-  .hello img,
-  .position img {
-    height: auto;
-    width: 100%;;
-  }
+@media only screen and (min-width: 480px) {
 
 }
